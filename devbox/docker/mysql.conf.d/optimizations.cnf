@@ -1,0 +1,5 @@
+[mysqld]
+
+innodb_buffer_pool_size=1G # please increase this if possible :)
+innodb_flush_log_at_trx_commit=2
+innodb_flush_method=O_DIRECT

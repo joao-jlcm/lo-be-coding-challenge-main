@@ -1,3 +1,23 @@
+# Documentation
+
+## Importing Logs
+
+Please run this command to import logs:
+
+	bin/console app:import-logs <location>
+
+It will import logs in chunks of 50 entries. You can increase this setting at `App\Console\Command\ImportLogsCommand::CHUNK_SIZE` for better results, but I left at 50 to reduce the memory usage.
+
+If the import crashes for some reason, it will continue at the same point.
+
+I've added some mysql optimizations into the file `docker/mysql.conf.d/optimizations.cnf` to increase importing speed.
+
+I hope you like it :blush:
+
+---
+---
+---
+
 # Legal One BE Coding Challenge
 
 Thanks for going through our interview process and for taking the coding test!
